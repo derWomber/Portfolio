@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.logoimg{
+    width: 120px;
+    display: flex;
+}
+
+span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #a8a8a8;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #181F1C;
+}
+
+nav{
+    max-width: 2000px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #315C2B;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 80%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #274029;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+.btn:hover{
+    background-color: #314F34;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1efc1e;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.headerimg{
+    width: 100%;
+    display: flex;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+header .content h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+
+.social-icons {
+    position: fixed;
+    bottom: 10rem;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.button-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #314F34;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px #315C2B(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    margin-top: 34rem;
+    margin-left: 1rem;
+    z-index: 999;
+
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button-top:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+  }
+  
+  .button-top:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .button-top::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .button-top:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
+
+
+.social-icons a {
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+
+.containerM {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.containerM h4 {
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 500px;
+}
+
+.containerM span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ccc;
+}
+
+.containerM .ML {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 30rem;
+    margin-top: -1rem;
+    background-color: #fff;
+}
+
+.containerM p {
+    margin-bottom: 1rem;
+    color: #ccc;
+    text-align: center;
+    margin-left: 500px;
+    font-size: 1.5rem;
+}
+
+
+.containerM img {
+  height: 500px;
+  width: 300px;
+  margin-right: 600px;
+  margin-top: -23rem;
+  z-index: 100;
+  transition: transform 0.3s ease
+}
+
+.image-container {
+  position: relative; /* Ensure proper positioning */
+  width: 300px;
+  margin-right: 600px;
+  transition: transform 0.3s ease
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -23rem;
+  height: 500px; /* Cover the entire image container */
+  width: 300px; /* Cover the entire image container */
+  background-color: rgba(39, 64, 41, 0.7); /* Transparent green color */
+  transition: opacity 0.3s ease; /* Fade transition */
+}
+
+.image-container:hover .overlay {
+  opacity: 0; /* Make the overlay disappear on hover */
+}
+
+.image-container:hover img {
+  transform: translate(-10px, -10px); /* Make the image bigger on hover */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.underlay {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  margin-top: -22rem;
+  height: 500px; /* Cover the entire image container */
+  width: 300px; /* Cover the entire image container */
+  border: 2px solid #1efc1e;
+  z-index: -1;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.image-container:hover .underlay {
+  transform: translate(10px, 10px); /* Move the underlay image on hover */
+}
+
+.containerL {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.containerL h4 {
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.containerL .LL {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-top: -1rem;
+    background-color: #fff;
+}
+
+.containerL .bac {
+    
+    height: 600px;
+    width: 500px;
+    margin-left: 600px;
+    margin-top: -20rem;
+}
+
+.containerL .underlayB {
+    position: absolute;
+
+    margin-top: -84rem;
+    margin-left: 632px;
+    height: 600px; /* Cover the entire image container */
+    width: 500px; /* Cover the entire image container */
+    border: 2px solid #1efc1e;
+    z-index: -1;
+}
+
+.containerL .underlayD {
+    position: absolute;
+
+    margin-top: 17rem;
+    margin-left: 632px;
+    height: 600px; /* Cover the entire image container */
+    width: 500px; /* Cover the entire image container */
+    border: 2px solid #1efc1e;
+    z-index: -1;
+}
+
+
+.containerL h2 {
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 560px;
+    margin-top: 15rem;
+}
+
+.containerL p {
+    margin-bottom: 1rem;
+    color: #ccc;
+    text-align: center;
+    margin-right: 600px;
+    font-size: 1.5rem;
+}
+
+.containerL .LL2 {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+}
+
+.containerL .DFO {
+    
+    height: 600px;
+    width: 500px;
+    margin-left: 600px;
+    margin-top: -25rem;
+}
+
+.containerL .cur {
+    width: 700px;
+    height: 400px;
+}
+.containerL .curh2 {
+    margin-top: 1rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.containerL .curp {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.SP{
+    max-height: 600px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.progress-bar {
+    margin-bottom: 5rem;
+}
+  
+  .progress {
+    height: 20px;
+    border-radius: 5px;
+    border: #000 solid 3px;
+  }
+  
+  .label {
+    display: block;
+    margin-top: 5px;
+}
+  
+  .containerS h4 {
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 620px;
+}
+
+.btn2{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #274029;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+    margin-left: 500px;
+    margin-bottom: 200px;
+}
+
+.btn2:hover{
+    background-color: #314F34;
+}
+
+.containerW {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.containerW h4 {
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.containerW .WL {
+    content: "";
+    display: block;
+    position: relative;
+    top: -50px;
+    width: 300px;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+}
+
+.containerW h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 5rem;
+
+}
+
+.containerW p {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: #ccc;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.containerW .WL2 {
+    content: "";
+    display: block;
+    position: relative;
+    width: 800px;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+}
+
+.copyright {
+    color: #999;
+    margin-left: 500px;
+}
+
